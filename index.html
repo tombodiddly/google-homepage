@@ -6,6 +6,9 @@
   </head>
 <main>
     <style>
+        #google-logo {
+          padding-bottom: 15px;
+          }
         ::-webkit-scrollbar {
           display: none;
           }
@@ -53,7 +56,7 @@
           font-size: 13px;
           text-decoration: none;
           margin-right: 35px;
-          margin-left: -13px;
+          margin-left: -27px;
           }
         .btn {
           padding: 10px 15px;
@@ -61,6 +64,7 @@
           margin-inline: 5px;
           border: none;
           color: rgb(118, 118, 119);
+          border-radius: 5px;
           }
         .btn2 {
           padding: 7px 13px;
@@ -69,10 +73,13 @@
           color: white;
           background-color: rgb(97, 136, 245);
           border: none;
-          border-radius: 5%;
+          border-radius: 7px;
           }          
         a:hover {
           text-decoration: underline;
+          }
+        button:hover {
+          box-shadow: .1px .1px 3px rgb(138, 137, 137);
           }
         .grfx {
           font-family: 'Material Icons', arial, serif;
@@ -83,22 +90,51 @@
         img {
           padding-left: 172px;
           }
+        .bar{
+          margin:0 auto;
+          height: 45px;
+          width:575px;
+          border-radius:30px;
+          border:1px solid #dcdcdc;
+          }
+        .bar:hover{
+          box-shadow: 1px 1px 8px 1px #dcdcdc;
+        }
+        .bar:focus-within{
+          box-shadow: 1px 1px 8px 1px #dcdcdc;
+          outline:none;
+        }
+        .searchbar{
+          height:23px;
+          border:none;
+          width:500px;
+          font-size:16px;
+          outline: none;
+        }
+        .voice{
+          height:30px;
+          position:relative;
+          top:-18px;
+          right: 150px;
+          }
     </style>
 
   <ul>
     <li><a href="#">About</a></li>
     <li><a href="#">Store</a></li>
-    <li style="float:right"><a> <button type="submit" class="btn2"><strong>Sign In</strong></button></a></li>
+    <li style="float:right"><a href="#"><button type="submit" class="btn2"onMouseOver="this.style.backgroundColor='rgb(118, 152, 247)'" onMouseOut="this.style.backgroundColor='rgb(97, 136, 245)'"><strong>Sign In</strong></button></a></li>
     <li style="float:right"><a href="#" class="grfx">list</a></li>
     <li style="float:right"><a href="#">Images</a></li>
     <li style="float:right"><a href="#">Gmail</a></li>
   </ul>
 
   <body>
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" id="google-logo" class="center" style="padding-top: 103px;">
-      <form action="#" style="margin-top: 26px;">
-        <input type="text" class="center" style="width: 475px">
-        </form>
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" title="Google" alt="Google logo" id="google-logo" class="center" style="padding-top: 103px;">
+    </div>
+    <div class="bar">
+      <input class="searchbar" type="text" title="Search">
+      <a href="#"> <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+    </div>
       <div style="text-align: center;">
         <button type="submit" class="btn">Google Search</button>
         <button type="submit" class="btn">I'm Feelilng Lucky</button>
@@ -107,11 +143,11 @@
 
   <footer>
     <ul>
-      <li><a href="#" target="_blank">Advertising</a></li>
-      <li><a href="#" target="_blank">Business</a></li>
-      <li><a href="#" target="_blank">How Search works</a></li>
-      <li style="float:right" class="footjam"><a href="#" target="_blank">Settings</a></li>
-      <li style="float:right" class="footjam"><a href="#" target="_blank">Terms</a></li>
+      <li><a href="#">Advertising</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">How Search works</a></li>
+      <li style="float:right" class="footjam"><a href="#">Settings</a></li>
+      <li style="float:right" class="footjam"><a href="#">Terms</a></li>
       <li style="float:right" class="footjam"><a href="#" target="_blank">Privacy</a></li>
     </ul>
   </footer>
